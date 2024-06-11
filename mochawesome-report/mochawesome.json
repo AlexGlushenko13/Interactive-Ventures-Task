@@ -1,0 +1,548 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 13,
+    "passes": 0,
+    "pending": 0,
+    "failures": 13,
+    "start": "2024-06-11T12:20:40.470Z",
+    "end": "2024-06-11T12:20:56.558Z",
+    "duration": 16088,
+    "testsRegistered": 13,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "33dcc3de-6b1a-4caf-9cca-2e6db1c77e4e",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a438aa8-b75a-4603-bb72-85080034b556",
+          "title": "Gender_tests",
+          "fullFile": "C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\getGender_test.js",
+          "file": "\\getGender_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Gender_tests\"",
+              "fullTitle": "Gender_tests \"before all\" hook: codeceptjs.beforeSuite in \"Gender_tests\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "db7135f3-b86e-4f99-b548-f5f6031d5598",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Gender_tests\"",
+              "fullTitle": "Gender_tests \"before each\" hook: codeceptjs.before in \"Gender_tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "b58ebd27-2e34-4339-a188-8d1774cfc61a",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Gender_tests\"",
+              "fullTitle": "Gender_tests \"after all\" hook: codeceptjs.afterSuite in \"Gender_tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "5211eca7-1b9e-4e70-9599-7fcaa57df729",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Gender_tests\"",
+              "fullTitle": "Gender_tests \"after each\" hook: finalize codeceptjs in \"Gender_tests\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "bf9098e7-5331-435b-914b-9aa773d8a57e",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "getFemaleList",
+              "fullTitle": "Gender_tests: getFemaleList",
+              "timedOut": false,
+              "duration": 1179,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getFemaleL_fe27d2a9-2fff-4f96-8e53-0de5445b36f3.failed.png\"",
+              "code": "I}) => {\n    await genderRequest(I, 'female', 200)",
+              "err": {
+                "message": "ValidationError: {\n  \"errorCode\": 0,\n  \"errorMessage\": null,\n  \"idList\": [\n    5,\n    15,\n    16,\n    300,\n    502,\n    503\n  ],\n  \"isSuccess\" [1]: true\n}\n\n[1] \"isSuccess\" is not allowed",
+                "estack": "ValidationError: {\n  \"errorCode\": 0,\n  \"errorMessage\": null,\n  \"idList\": [\n    5,\n    15,\n    16,\n    300,\n    502,\n    503\n  ],\n  \"isSuccess\" [1]: true\n}\n\n[1] \"isSuccess\" is not allowed\n    at exports.process (node_modules\\codeceptjs\\node_modules\\joi\\lib\\errors.js:193:16)\n    at internals.entry (node_modules\\codeceptjs\\node_modules\\joi\\lib\\validator.js:250:26)\n    at exports.entry (node_modules\\codeceptjs\\node_modules\\joi\\lib\\validator.js:27:30)\n    at internals.Base.validate (node_modules\\codeceptjs\\node_modules\\joi\\lib\\base.js:548:26)\n    at internals.assert (node_modules\\codeceptjs\\node_modules\\joi\\lib\\index.js:225:27)\n    at Object.assert (node_modules\\codeceptjs\\node_modules\\joi\\lib\\index.js:102:19)\n    at JSONResponse.seeResponseMatchesJsonSchema (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:330:9)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": null
+              },
+              "uuid": "fe27d2a9-2fff-4f96-8e53-0de5445b36f3",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "checkFemaleList",
+              "fullTitle": "Gender_tests: checkFemaleList",
+              "timedOut": false,
+              "duration": 1030,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"checkFemal_0819c9bc-4be4-402f-b815-533e59e3cce4.failed.png\"",
+              "code": "I}) => {\n    await checkUsersData(I, 'female')",
+              "err": {
+                "message": "AssertionError: expected { Object (isSuccess, errorCode, ...) } to deeply match { user: { gender: 'female', id: 15 } }",
+                "estack": "AssertionError: expected { Object (isSuccess, errorCode, ...) } to deeply match { user: { gender: 'female', id: 15 } }\n    at JSONResponse.seeResponseContainsJson (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:199:42)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": " {\n   \"user\": {\n-     \"gender\": \"male\"\n+     \"gender\": \"female\"\n     \"id\": 15\n   }\n }\n"
+              },
+              "uuid": "0819c9bc-4be4-402f-b815-533e59e3cce4",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getMaleList",
+              "fullTitle": "Gender_tests: getMaleList",
+              "timedOut": false,
+              "duration": 828,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getMaleLis_05e169e2-67c2-4f69-af7e-b04965241072.failed.png\"",
+              "code": "I}) => {\n    await genderRequest(I, 'male', 200)",
+              "err": {
+                "message": "ValidationError: {\n  \"errorCode\": 0,\n  \"errorMessage\": null,\n  \"idList\": [\n    10,\n    15,\n    33,\n    94,\n    501,\n    911\n  ],\n  \"isSuccess\" [1]: true\n}\n\n[1] \"isSuccess\" is not allowed",
+                "estack": "ValidationError: {\n  \"errorCode\": 0,\n  \"errorMessage\": null,\n  \"idList\": [\n    10,\n    15,\n    33,\n    94,\n    501,\n    911\n  ],\n  \"isSuccess\" [1]: true\n}\n\n[1] \"isSuccess\" is not allowed\n    at exports.process (node_modules\\codeceptjs\\node_modules\\joi\\lib\\errors.js:193:16)\n    at internals.entry (node_modules\\codeceptjs\\node_modules\\joi\\lib\\validator.js:250:26)\n    at exports.entry (node_modules\\codeceptjs\\node_modules\\joi\\lib\\validator.js:27:30)\n    at internals.Base.validate (node_modules\\codeceptjs\\node_modules\\joi\\lib\\base.js:548:26)\n    at internals.assert (node_modules\\codeceptjs\\node_modules\\joi\\lib\\index.js:225:27)\n    at Object.assert (node_modules\\codeceptjs\\node_modules\\joi\\lib\\index.js:102:19)\n    at JSONResponse.seeResponseMatchesJsonSchema (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:330:9)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": null
+              },
+              "uuid": "05e169e2-67c2-4f69-af7e-b04965241072",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "checkMaleList",
+              "fullTitle": "Gender_tests: checkMaleList",
+              "timedOut": false,
+              "duration": 5506,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"checkMaleL_8d9ff3e8-2d12-4427-a2ef-80c3ade50585.failed.png\"",
+              "code": "I}) => {\n    await checkUsersData(I, 'male')",
+              "err": {
+                "message": "AssertionError: expected { Object (isSuccess, errorCode, ...) } to deeply match { user: { gender: 'male', id: 501 } }",
+                "estack": "AssertionError: expected { Object (isSuccess, errorCode, ...) } to deeply match { user: { gender: 'male', id: 501 } }\n    at JSONResponse.seeResponseContainsJson (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:199:42)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": " {\n   \"user\": {\n-     \"gender\": \"McCloud\"\n-     \"id\": 911\n+     \"gender\": \"male\"\n+     \"id\": 501\n   }\n }\n"
+              },
+              "uuid": "8d9ff3e8-2d12-4427-a2ef-80c3ade50585",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getInvalidList",
+              "fullTitle": "Gender_tests: getInvalidList",
+              "timedOut": false,
+              "duration": 843,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getInvalid_6c752ed0-b06d-4190-8a48-3e48658d911c.failed.png\"",
+              "code": "I}) => {\n    await genderRequest(I, 'Other', 400)",
+              "err": {
+                "message": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400",
+                "estack": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400\n    at JSONResponse.seeResponseCodeIs (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:111:37)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": "- 500\n+ 400\n"
+              },
+              "uuid": "6c752ed0-b06d-4190-8a48-3e48658d911c",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getUpRegList",
+              "fullTitle": "Gender_tests: getUpRegList",
+              "timedOut": false,
+              "duration": 843,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getUpRegLi_54395e1c-9691-4f39-9b0c-762a6bd18bb8.failed.png\"",
+              "code": "I}) => {\n    await genderRequest(I, 'Male', 400)",
+              "err": {
+                "message": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400",
+                "estack": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400\n    at JSONResponse.seeResponseCodeIs (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:111:37)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": "- 500\n+ 400\n"
+              },
+              "uuid": "54395e1c-9691-4f39-9b0c-762a6bd18bb8",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getEmptyList",
+              "fullTitle": "Gender_tests: getEmptyList",
+              "timedOut": false,
+              "duration": 827,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getEmptyLi_93dabbb8-dc14-4851-be13-f8fa11a19b86.failed.png\"",
+              "code": "I}) => {\n    await genderRequest(I, '', 400)",
+              "err": {
+                "message": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400",
+                "estack": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400\n    at JSONResponse.seeResponseCodeIs (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:111:37)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": "- 500\n+ 400\n"
+              },
+              "uuid": "93dabbb8-dc14-4851-be13-f8fa11a19b86",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getGender3List",
+              "fullTitle": "Gender_tests: getGender3List",
+              "timedOut": false,
+              "duration": 828,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getGender3_0d06a3fc-7e5f-4c96-bed8-183aad0d3a02.failed.png\"",
+              "code": "I}) => {\n    await genderRequest(I, 'magic', 400)",
+              "err": {
+                "message": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400",
+                "estack": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400\n    at JSONResponse.seeResponseCodeIs (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:111:37)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": "- 500\n+ 400\n"
+              },
+              "uuid": "0d06a3fc-7e5f-4c96-bed8-183aad0d3a02",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getGender4List",
+              "fullTitle": "Gender_tests: getGender4List",
+              "timedOut": false,
+              "duration": 832,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getGender4_61035f4d-7943-471a-a5f1-63b63b9285b1.failed.png\"",
+              "code": "I}) => {\n    await genderRequest(I, 'McCloud', 400)",
+              "err": {
+                "message": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400",
+                "estack": "AssertionError: Response code is not the same as expected: expected 500 to deeply equal 400\n    at JSONResponse.seeResponseCodeIs (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:111:37)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": "- 500\n+ 400\n"
+              },
+              "uuid": "61035f4d-7943-471a-a5f1-63b63b9285b1",
+              "parentUUID": "4a438aa8-b75a-4603-bb72-85080034b556",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fe27d2a9-2fff-4f96-8e53-0de5445b36f3",
+            "0819c9bc-4be4-402f-b815-533e59e3cce4",
+            "05e169e2-67c2-4f69-af7e-b04965241072",
+            "8d9ff3e8-2d12-4427-a2ef-80c3ade50585",
+            "6c752ed0-b06d-4190-8a48-3e48658d911c",
+            "54395e1c-9691-4f39-9b0c-762a6bd18bb8",
+            "93dabbb8-dc14-4851-be13-f8fa11a19b86",
+            "0d06a3fc-7e5f-4c96-bed8-183aad0d3a02",
+            "61035f4d-7943-471a-a5f1-63b63b9285b1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12716,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+          "title": "User_tests",
+          "fullFile": "C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\getUser_test.js",
+          "file": "\\getUser_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"User_tests\"",
+              "fullTitle": "User_tests \"before all\" hook: codeceptjs.beforeSuite in \"User_tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "ce1b113b-831f-43cc-b43d-5c8377ee9caf",
+              "parentUUID": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"User_tests\"",
+              "fullTitle": "User_tests \"before each\" hook: codeceptjs.before in \"User_tests\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "0b4846ef-224a-4d08-98fa-57fe1a107fba",
+              "parentUUID": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"User_tests\"",
+              "fullTitle": "User_tests \"after all\" hook: codeceptjs.afterSuite in \"User_tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "1038ee25-2668-4bd5-8ad6-4627360cb703",
+              "parentUUID": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"User_tests\"",
+              "fullTitle": "User_tests \"after each\" hook: finalize codeceptjs in \"User_tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "b1a02ccd-6efb-4ca8-8901-bdb7090cf60c",
+              "parentUUID": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "getExistingID",
+              "fullTitle": "User_tests: getExistingID",
+              "timedOut": false,
+              "duration": 843,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getExistin_560a39e8-35a1-4531-9e19-998e4c09d700.failed.png\"",
+              "code": "I}) => {\n    await checkUserData(I, 15, 200)",
+              "err": {
+                "message": "ValidationError: {\n  \"errorCode\": 0,\n  \"errorMessage\": null,\n  \"user\": {\n    \"id\": 15,\n    \"name\": \"Gogol\",\n    \"gender\": \"male\",\n    \"age\": 210,\n    \"city\": \"Mirgorod\",\n    \"registrationDate\": \"1809-04-01T00:00:00\"\n  },\n  \"isSuccess\" [1]: true\n}\n\n[1] \"isSuccess\" is not allowed",
+                "estack": "ValidationError: {\n  \"errorCode\": 0,\n  \"errorMessage\": null,\n  \"user\": {\n    \"id\": 15,\n    \"name\": \"Gogol\",\n    \"gender\": \"male\",\n    \"age\": 210,\n    \"city\": \"Mirgorod\",\n    \"registrationDate\": \"1809-04-01T00:00:00\"\n  },\n  \"isSuccess\" [1]: true\n}\n\n[1] \"isSuccess\" is not allowed\n    at exports.process (node_modules\\codeceptjs\\node_modules\\joi\\lib\\errors.js:193:16)\n    at internals.entry (node_modules\\codeceptjs\\node_modules\\joi\\lib\\validator.js:250:26)\n    at exports.entry (node_modules\\codeceptjs\\node_modules\\joi\\lib\\validator.js:27:30)\n    at internals.Base.validate (node_modules\\codeceptjs\\node_modules\\joi\\lib\\base.js:548:26)\n    at internals.assert (node_modules\\codeceptjs\\node_modules\\joi\\lib\\index.js:225:27)\n    at Object.assert (node_modules\\codeceptjs\\node_modules\\joi\\lib\\index.js:102:19)\n    at JSONResponse.seeResponseMatchesJsonSchema (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:330:9)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": null
+              },
+              "uuid": "560a39e8-35a1-4531-9e19-998e4c09d700",
+              "parentUUID": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getNonExistingID",
+              "fullTitle": "User_tests: getNonExistingID",
+              "timedOut": false,
+              "duration": 843,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getNonExis_b520ec32-0295-41a1-bfd3-acb15abf12d6.failed.png\"",
+              "code": "I}) => {\n    await checkUserData(I, 65000, 404)",
+              "err": {
+                "message": "AssertionError: Response code is not the same as expected: expected 200 to deeply equal 404",
+                "estack": "AssertionError: Response code is not the same as expected: expected 200 to deeply equal 404\n    at JSONResponse.seeResponseCodeIs (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:111:37)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": "- 200\n+ 404\n"
+              },
+              "uuid": "b520ec32-0295-41a1-bfd3-acb15abf12d6",
+              "parentUUID": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getInvalidID",
+              "fullTitle": "User_tests: getInvalidID",
+              "timedOut": false,
+              "duration": 828,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getInvalid_3579859e-b149-40b1-9592-29aca620bbaa.failed.png\"",
+              "code": "I}) => {\n    await checkUserData(I, 'aa', 400)",
+              "err": {
+                "message": "ValidationError: {\n  \"isSuccess\": false,\n  \"errorMessage\": \"NumberFormatException: For input string: \\\"aa\\\"\",\n  \"user\": null,\n  \"errorCode\" [1]: 400\n}\n\n[1] \"errorCode\" must be [404]",
+                "estack": "ValidationError: {\n  \"isSuccess\": false,\n  \"errorMessage\": \"NumberFormatException: For input string: \\\"aa\\\"\",\n  \"user\": null,\n  \"errorCode\" [1]: 400\n}\n\n[1] \"errorCode\" must be [404]\n    at exports.process (node_modules\\codeceptjs\\node_modules\\joi\\lib\\errors.js:193:16)\n    at internals.entry (node_modules\\codeceptjs\\node_modules\\joi\\lib\\validator.js:250:26)\n    at exports.entry (node_modules\\codeceptjs\\node_modules\\joi\\lib\\validator.js:27:30)\n    at internals.Base.validate (node_modules\\codeceptjs\\node_modules\\joi\\lib\\base.js:548:26)\n    at internals.assert (node_modules\\codeceptjs\\node_modules\\joi\\lib\\index.js:225:27)\n    at Object.assert (node_modules\\codeceptjs\\node_modules\\joi\\lib\\index.js:102:19)\n    at JSONResponse.seeResponseMatchesJsonSchema (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:330:9)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": null
+              },
+              "uuid": "3579859e-b149-40b1-9592-29aca620bbaa",
+              "parentUUID": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getOutOfRangeID",
+              "fullTitle": "User_tests: getOutOfRangeID",
+              "timedOut": false,
+              "duration": 827,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"getOutOfRa_dcededc1-71e1-4805-8257-4419dc489548.failed.png\"",
+              "code": "I}) => {\n    await checkUserData(I, -1, 400)",
+              "err": {
+                "message": "AssertionError: Response code is not the same as expected: expected 200 to deeply equal 400",
+                "estack": "AssertionError: Response code is not the same as expected: expected 200 to deeply equal 400\n    at JSONResponse.seeResponseCodeIs (node_modules\\codeceptjs\\lib\\helper\\JSONResponse.js:111:37)\n    at Step.run (node_modules\\codeceptjs\\lib\\step.js:123:49)\n    at C:\\Users\\glad_\\AquaProjects\\Interactive Ventures Task\\node_modules\\codeceptjs\\lib\\actor.js:138:23",
+                "diff": "- 200\n+ 400\n"
+              },
+              "uuid": "dcededc1-71e1-4805-8257-4419dc489548",
+              "parentUUID": "d97bdab7-3d41-4baa-8e64-e8529bf5dc19",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "560a39e8-35a1-4531-9e19-998e4c09d700",
+            "b520ec32-0295-41a1-bfd3-acb15abf12d6",
+            "3579859e-b149-40b1-9592-29aca620bbaa",
+            "dcededc1-71e1-4805-8257-4419dc489548"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3341,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {},
+      "version": "6.2.0"
+    }
+  }
+}
